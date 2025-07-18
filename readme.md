@@ -41,79 +41,11 @@ Esta estrutura inicial servirá como bases para todos os estudos feitos neste re
 ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 ![NPM](https://img.shields.io/badge/NPM-CB3837?style=for-the-badge&logo=npm&logoColor=white)
 
-## 🔥 Projetos em Destaque
-
-### 📊 Sistema de Maior Número
-Um exercício prático que demonstra:
-- Uso de módulos (exports/imports)
-- Interface de linha de comando com `readline`
-- Diferentes abordagens para programação assíncrona
-- Tratamento de entrada do usuário
-
-**Localização**: `Export_e_Import/exercicio/`
-
 ## 🚀 Como Executar
 
 ### Pré-requisitos
 - Node.js (versão 14 ou superior)
 - NPM (incluso com Node.js)
-
-### Executando os Projetos
-
-```bash
-# Navegue até o diretório do projeto
-cd "Export_e_Import/exercicio"
-
-# Execute a versão principal
-node main.js
-
-# Ou experimente outras versões
-node main_promises.js
-node main_promisify.js
-node main_callbacks.js
-```
-
-## 📖 Conceitos Aprendidos
-
-### 🔄 Export/Import
-```javascript
-// Exportando (funcoes_auxiliares.js)
-module.exports = { gets, prints };
-
-// Importando (main.js)
-const { gets, prints } = require('./funcoes_auxiliares.js');
-```
-
-### ⚡ Programação Assíncrona
-
-#### 1. Callbacks Tradicionais
-```javascript
-rl.question('Pergunta:', (resposta) => {
-    // Código executado após resposta
-});
-```
-
-#### 2. Promises + Async/Await
-```javascript
-const pergunta = (texto) => new Promise(resolve => {
-    rl.question(texto, resolve);
-});
-
-const resposta = await pergunta('Digite algo:');
-```
-
-#### 3. Recursão para Iterações Assíncronas
-```javascript
-function perguntarProximoNumero() {
-    if (contador < 4) {
-        rl.question('Digite um número: ', (input) => {
-            processarInput(input);
-            contador++;
-            perguntarProximoNumero(); // Recursão
-        });
-    }
-}
-```
 
 ## 🎓 Recursos de Estudo
 
@@ -132,11 +64,11 @@ Este é um repositório pessoal de estudos, mas sugestões e dicas são sempre b
 ## 📈 Progresso
 
 ```
-🟢 Módulos JavaScript ████████████████████████████████████████ 100%
-🟢 Callbacks           ████████████████████████████████████████ 100%
-🟢 Promises/Async      ████████████████████████████████████████ 100%
-🟡 APIs REST           ████████████████████░░░░░░░░░░░░░░░░░░░░  50%
-🔴 Express.js          ████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  20%
+🟢 Módulos JavaScript  ████████████████████████████████████████ 100%
+🔴 Callbacks           ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 100%
+🔴 Promises/Async      ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 100%
+🔴 APIs REST           ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  50%
+🔴 Express.js          ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  20%
 🔴 Banco de Dados      ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   0%
 🔴 Testes              ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   0%
 ```
@@ -149,6 +81,6 @@ Este repositório é uma documentação viva do meu aprendizado em JavaScript e 
 
 ⭐ **Curtiu o projeto?** Deixe uma estrela no repositório!
 
-**Autor**: Guilherme Dias
-**Contato**: guilhermediasfp1@gmail.com
+**Autor**: Guilherme Dias <br>
+**Contato**: guilhermediasfp1@gmail.com <br>
 **LinkedIn**: https://www.linkedin.com/in/guilherme-dias-53266b29a/
